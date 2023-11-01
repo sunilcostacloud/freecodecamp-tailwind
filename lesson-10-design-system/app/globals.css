@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply mb-2 text-3xl font-bold;
+  }
+  h2 {
+    @apply mb-1 text-xl font-semibold;
+  }
+  a {
+    @apply underline text-blue-600 hover:text-purple-500;
+  }
+  input,
+  select {
+    @apply text-slate-500 placeholder:italic disabled:bg-slate-100 p-1 border outline-none border-slate-300 rounded-sm;
+  }
+  select {
+    @apply pr-8;
+  }
+  /* input[type="text"] {
+    @apply placeholder:italic disabled:bg-slate-100 p-1 border outline-none border-slate-300 rounded-sm;
+  }
+  input[type="number"] {
+    @apply placeholder:italic disabled:bg-slate-100 p-1 border outline-none border-slate-300 rounded-sm;
+  }
+  input[type="email"] {
+    @apply placeholder:italic disabled:bg-slate-100 p-1 border outline-none border-slate-300 rounded-sm;
+  }
+  input[type="date"] {
+    @apply placeholder:italic disabled:bg-slate-100 p-1 border outline-none border-slate-300 rounded-sm;
+  } */
+  input[type="checkbox"] {
+    @apply p-2 accent-purple-500 mr-1;
+  }
+  label {
+    @apply text-sm text-slate-700 font-medium;
+  }
+  .btn {
+    @apply px-4 py-2 rounded-lg hover:transition hover:duration-300 hover:opacity-80 disabled:bg-slate-400/30 hover:disabled:opacity-100;
+  }
+  .btn-primary {
+    @apply bg-blue-600 text-white;
+  }
+  .btn-secondary {
+    @apply bg-slate-800 text-white;
+  }
+  .customClassText {
+    @apply font-bold;
+  }
+}
